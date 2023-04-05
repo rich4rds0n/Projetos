@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+}
+
+.cabecalho{
+    width: 100%;
+    position: fixed;
+    padding: 10px;
+    background-color: black;
+}
+.cabecalho-logo{
+    float: left;
+    text-align: center;
+}
+.cabecalho-menu{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+.cabecalho-menu > a{
+    float: right;
+}
+.cabecalho-menu > a{
+    margin-right: 10px;
+    font-size: 20px;
+    display: block;
+    color: #ffff;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+.cabecalho-menu > a:hover{
+    background-color: #333333;
+}
+
+.conteudo-titulo > h1{
+    margin-top: 60px;
+    font-size: 65px;
+    text-align: center;
+}
+.conteudo-titulo > p{
+    font-size: 35px;
+    text-align: center;
+}
+.conteudo-sobre > h3{
+    margin: 10px;
+    font-size: 25px;
+    text-align: center;
+}
+.conteudo-sobre > p{
+    margin: 15px;
+    font-size: 15px;
+    text-align: justify;
+}
+
+.conteudo-dev > header{
+    margin: 15px;
+    font-size: 25px;
+    text-align: center;
+}
+.flex-container{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.flex-container > div > textarea{
+    text-align: justify;
+    border-style: none;
+}
+
+.conteudo-sites > header{
+    font-size: 25px;
+    text-align: center;
+}
+#subtitulo{
+    font-size: 20px;
+    text-align: center;
+}
+.conteudo-sites > ul{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+.conteudo-sites > ul > li{
+    font-size: 15px;
+    text-align: center;
+    display: block;
+    margin: 0;
+    box-sizing: border-box;
+    height: 25%;
+}
+.conteudo-sites > ul > li:nth-child(odd){
+    clear: both;
+    float: left;
+    width: 50%;
+}
+.sites-container{
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+.sites-container > div > header{
+    font-size: 20px;
+}
+.sites-container > div > textarea{
+    border-style: none;
+    text-align: justify;
+    font-size: 15px;
+}
+
+.conteudo-linguagens > header{
+    margin: 15px;
+    font-size: 25px;
+    text-align: center;
+}
+.imagens-linguagens{
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+.imagens-linguagens > div > details > textarea{
+    border-style: none;
+    text-align: justify;
+}
+
+.rodape{
+    padding: 10px;
+    background-color: black;
+    color: #ffff;
+}
+.rodape > header{
+    font-size: 25px;
+}
+.rodape > p{
+    font-size: 15px;
+}
+#direitos{
+    text-align: center;
+}
