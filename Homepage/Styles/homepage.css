@@ -46,6 +46,10 @@
     font-size: 35px;
     text-align: center;
 }
+
+.conteudo-sobre{
+    margin: 20px 0px;
+}
 .conteudo-sobre > h3{
     margin: 10px;
     font-size: 25px;
@@ -55,8 +59,12 @@
     margin: 15px;
     font-size: 15px;
     text-align: justify;
+    text-indent: 25px;
 }
 
+.conteudo-dev{
+    margin: 20px 0px;
+}
 .conteudo-dev > header{
     margin: 15px;
     font-size: 25px;
@@ -70,8 +78,13 @@
 .flex-container > div > textarea{
     text-align: justify;
     border-style: none;
+    text-decoration: none;
+    text-indent: 25px;
 }
 
+.conteudo-sites{
+    margin: 20px 0px;
+}
 .conteudo-sites > header{
     font-size: 25px;
     text-align: center;
@@ -112,8 +125,12 @@
     border-style: none;
     text-align: justify;
     font-size: 15px;
+    text-indent: 25px;
 }
 
+.conteudo-linguagens{
+    margin: 20px 0px;
+}
 .conteudo-linguagens > header{
     margin: 15px;
     font-size: 25px;
@@ -127,6 +144,7 @@
 .imagens-linguagens > div > details > textarea{
     border-style: none;
     text-align: justify;
+    text-indent: 25px;
 }
 
 .rodape{
