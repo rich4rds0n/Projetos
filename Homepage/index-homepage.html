@@ -5,15 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="Styles/homepage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Homepage</title>
 </head>
 <body>
     <header class="cabecalho">
         <img class="cabecalho-logo" src="imagens/photo.jpg" alt="" width="50px">
-        <nav class="cabecalho-menu">
+        <nav class="topnav">
             <a href="#">Portfólio</a>
             <a href="#rodape">Contato</a>
+            <div class="dropdown">
+                <button class="dropbtn">Integrantes
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Integrante 1</a>
+                    <a href="#">Integrante 2</a>
+                    <a href="#">Integrante 3</a>
+                    <a href="#">Integrante 4</a>
+                    <a href="#">Integrante 5</a>
+                </div>
+            </div>
             <a href="#titulo">Inicio</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
         </nav>
     </header>
     <br>
@@ -147,5 +161,16 @@
         <br>
         <p id="direitos">Todos os Direitos Reservados © 2023 - CodeYote | Desenvolvido por CodeYote</p>
     </footer>
+
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+    </script>
 </body>
 </html>
