@@ -22,7 +22,8 @@ body{
 .container{
     border-radius: 1rem;
     -webkit-backdrop-filter: blur(8px);
-    backdrop-filter: blur(8px);
+    backdrop-filter: grayscale(.8) blur(8px);
+    /*background-color: rgb(152 151 151 / 25%);*/
     box-shadow: inset 0 0 0 200px rgba(255, 255, 255, 0.08);
     padding: 2rem;
     color: #ffff;
@@ -53,7 +54,7 @@ body{
     cursor: pointer;
 }
 
-#weather-data, #loader, #error-message{
+#weather-data, #loader{
     border-top: 1px solid #ffff;
     margin-top: 1.5rem;
     padding-top: 1.5rem;
@@ -77,6 +78,10 @@ body{
 
 #temperature{
     font-size: 4rem;
+}
+
+#sensacao-termica{
+    font-weight: bold;
 }
 
 #description-container{
@@ -108,12 +113,29 @@ body{
     justify-content: center;
     text-align: center;
     align-items: center;
+    margin-top: 1rem;
 }
 
 #coord-container #lat #lon{
     margin: 1rem;
     padding: 1rem;
 }
+
+/*.daily-container{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.daily-container h2{
+    padding: 0.8rem;
+}
+
+.day-list li{
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+
+}*/
 
 #loader i{
     animation: rotate 1.5s linear infinite;

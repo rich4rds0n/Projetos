@@ -1,5 +1,5 @@
 const apiKey = "871c022af251f0860451b3f9edeccbdb";
-const apiKeyUnsplash = "XgSAo9sotVOyUp-B_CkBRn_x8Z5eXoh7lfjZkJ0q8i0";
+/*const apiKeyUnsplash = "XgSAo9sotVOyUp-B_CkBRn_x8Z5eXoh7lfjZkJ0q8i0";*/
 const apiCountryURL = "https://www.countryflagicons.com/FLAT/64/.png";
 const apiUnsplash = "https://source.unsplash.com/1600x900/?";
 
@@ -8,6 +8,7 @@ const searchBtn = document.querySelector("#search");
 
 const cityElement = document.querySelector("#city");
 const tempElement = document.querySelector("#temperature span");
+const fellsLikeElement = document.querySelector("#feels-like span");
 const descElement = document.querySelector("#description");
 const weatherIconElement = document.querySelector("#weather-icon");
 const countryElement = document.querySelector("#country");
@@ -31,6 +32,13 @@ const getWeatherData = async (city) => {
     const data = await res.json();
     toggleLoader();
     return data;
+
+    /*toggleLoader();
+    const apiWeather8Days = `api.openweathermap.org/data/2.5/forecast/daily?lat=${latElement}&lon=${lonElement}&cnt={8}&appid=${apiKey}`;
+    const res1 = await fetch(apiWeather8Days);
+    const data1 = await res.json();
+    toggleLoader();
+    return data1;*/
 };
 
 const showWeatherData = async (city) =>{
@@ -38,6 +46,7 @@ const showWeatherData = async (city) =>{
 
     cityElement.innerText = data.name;
     tempElement.innerText = parseInt(data.main.temp);
+    fellsLikeElement.innerText = parseInt(data.main.feels_like);
     descElement.innerText = data.weather[0].description;
     weatherIconElement.setAttribute("src", `http://openweathermap.org/img/wn/${data.weather[0].icon}.png`);
     countryElement.setAttribute("src", `https://www.countryflagicons.com/FLAT/64/${data.sys.country}.png`); 

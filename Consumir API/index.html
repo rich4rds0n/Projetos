@@ -19,7 +19,7 @@
         referrerpolicy="no-referrer" 
     />
 
-    <script src="js/scripts.js" defer></script>
+    <script src="Script/scripts.js" defer></script>
 </head>
 <body>
     <div class="container">
@@ -40,6 +40,8 @@
                 <img src="" alt="Bandeira do país" id="country">
             </h2>
             <p id="temperature"><span></span>&deg;C</p>
+            <p id="sensacao-termica">Sensação térmica</p>
+            <p id="feels-like"><span></span>&deg;C</p>
             <div id="description-container">
                 <p id="description"></p>
                 <img src="" alt="Condições do tempo" id="weather-icon">
@@ -54,6 +56,7 @@
                     <span></span>
                 </p>
             </div>
+
             <div id="coord-container">
                 <p id="lat">
                     Latitude
@@ -67,10 +70,31 @@
                 </p>
             </div>
         </div>
-        
+
         <div id="loader" class="hide">
             <i class="fa-solid fa-spinner"></i>
         </div>
+
+        <!--<div class="daily-container" id="forecast">
+            <h2>Previsão dos próximos 8 dias</h2>
+            <ul class="day-list">
+                <li>
+                    <span>Sex, 9 Jun</span>
+                    <div class="day-list-values">
+                        <img src="" alt="" id="weather-icon">
+                        <span>31°C / 28°C</span>
+                    </div>
+                    <span class="sub">Ceu limpo</span>
+                </li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>-->
     </div>
 </body>
 </html>
