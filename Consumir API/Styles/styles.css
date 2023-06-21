@@ -22,11 +22,11 @@ body{
 .container{
     border-radius: 1rem;
     -webkit-backdrop-filter: blur(8px);
-    backdrop-filter: grayscale(.8) blur(8px);
+    backdrop-filter: grayscale(.5) blur(8px);
     /*background-color: rgb(152 151 151 / 25%);*/
-    box-shadow: inset 0 0 0 200px rgba(255, 255, 255, 0.08);
+    box-shadow: inset 0 0 0 200px rgba(255, 255, 255, 0.397);
     padding: 2rem;
-    color: #ffff;
+    color: #000;
 }
 
 .form h3{
@@ -55,7 +55,7 @@ body{
 }
 
 #weather-data, #loader{
-    border-top: 1px solid #ffff;
+    border-top: 1px solid #000;
     margin-top: 1.5rem;
     padding-top: 1.5rem;
     text-align: center;
@@ -103,7 +103,7 @@ body{
 }
 
 #details-container #humidity{
-    border-right: 1px solid #ffff;
+    border-right: 1px solid #000;
     margin: 0.6rem;
     padding: 0.6rem;
 }
